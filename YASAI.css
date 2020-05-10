@@ -1,31 +1,66 @@
 @charset "utf-8";
 
-body{font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;}
+body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;}
 
-/*YASAI*/
+/*box layout*/
+.boxA,.box4,.box5 {padding-left: 15px;padding-right: 15px;}
+.boxA {padding-top: 20px; padding-bottom: 10px;}
+.box4 {padding-top: 20px; padding-bottom: 20px;}
+
+/*boxA box1 site*/
 .site h1 a {color:#000000; text-decoration: none;}
 .site h1 {margin:0; font-size:30px;}
+.site image {border: none;} /*Iinternet Explorerの枠線表示防止*/
 
-/*nav*/
+/*boxA box2*/
 .menu ul {margin:0; padding:0; list-style: none}
-.menu li a {display:block; padding:5px; color:#000000; font-size:14px; text-emphasis: none;}
+.menu li a {display:block; padding:10px 15px; color:#000000; font-size:14px; text-emphasis: none;}
 .menu li a:hover {background-color: #000000;}
 .menu ul:after {content:""; display:block; clear:both}
 .menu li {float: left; width:auto;}
 
-/*top image*/
+/*box3*/
 .topimage {max-width: 100%; height:auto; vertical-align: bottom;}
 
 /*news*/
+.news {padding: 20px; border: solid 5px #dddddd}
 .news h1 {margin-top: 0; margin-bottom: 5px; font-size: 18px; color:#000000}
 .news ul {margin: 0; padding: 0; list-style: none;}
+.news li a {display:block; padding: 5px; border-bottom:dotted 2px #dddddd; color:#000000; font-size: 14px; text-decoration: none;}
+.news li a:hover {background-color: #eeeeee;}
+.news a :after {content: "" ; display: block; clear: both;}
+.news time {float: left; width: 60px; color: #888888; font-weight: bold}
+.news.text { float: none; width: auto; margin-left: 60px;}
+
+/*box4 4-1,4-2*/
+.box4::after{content: ""; display: block; clear: both;}
+.box4-1 {float: left; width: 70%;}
+.box4-2 {float: right; width: 30%;}
 
 /*Copylight*/
 .Copylight p {margin: 0; color: #000000; font-size: 14px;}
 
-/*768px~*/
+/*box5*/
+.box5 {padding-top: 15px; padding-bottom: 15px; background-color: #dddddd;}
+
+/*----------~599px----------*/
+@media (max-width: 599px){
+    /*nav*/
+    .menu li a {padding:7px 10px; font-size: 11px;}
+
+}
+
+/*----------768px~----------*/
 @media (min-width: 768px){
     .boxA:after {content:""; display:block; clear:both}
-    .box1 {float:left; width:50%}
-    .box2 {float:right; width:50%}
-}     
+    .box1 {float:left; width:auto}
+    .box2 {float:right; width:auto}
+}
+
+/*----------1190px~----------*/
+@media (min-width: 1190px){
+    .box3,.box4,.boxA-inner,.box5-inner {width: 1140px; margin-left: auto; margin-right: auto}
+    .box4 {width: 1140px; margin-left: auto; margin-right: auto}
+    .boxA {margin-bottom: 20px; border-bottom: solid 1px #6b1a1a}
+
+}   
