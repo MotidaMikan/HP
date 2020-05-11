@@ -34,11 +34,12 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 
 /*box4 4-1,4-2*/
 .follow ul {margin: 0; padding: 0; list-style: none;}
-.follow li a {display: block; padding:5px; color: #ffffff; font-size: 14px; text-decoration: none;}
+.follow li a {display: block; padding:10px; margin-bottom: 10px; border-radius: 7px; color: #ffffff; font-size: 14px; text-decoration: none;}
 .follow li a:hover {opacity: 0.8;}
 .follow-T {background-color: #63bafb;}
 .follow-F {background-color: #5288f7;}
 .follow-G {background-color: #f65d4a;}
+.follow i {margin-right: 10px; margin-left: 10px; font-size: 24px; vertical-align: middle;}
 
 /*Copylight*/
 .Copylight p {margin: 0; color: #000000; font-size: 14px;}
@@ -50,6 +51,7 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 @media (max-width: 599px){
     /*nav*/
     .menu li a {padding:7px 10px; font-size: 11px;}
+    
 
 }
 
