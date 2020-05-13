@@ -3,7 +3,7 @@
 body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;}
 
 /*box layout*/
-.boxA,.box4,.box5,.box6 {padding-left: 15px;padding-right: 15px;}
+.boxA,.box4,.box5,.box6 {padding-left: 15px; padding-right: 15px;}
 .boxA {padding-top: 20px; padding-bottom: 10px;}
 .box4 {padding-top: 20px; padding-bottom: 20px;}
 
@@ -40,7 +40,6 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 .follow-F {background-color: #5288f7;}
 .follow-G {background-color: #f65d4a;}
 .follow i {margin-right: 10px; margin-left: 10px; font-size: 24px; vertical-align: middle;}
-
 
 /*arrow1*/
 .arrow1 {
@@ -98,7 +97,23 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
     .box4-1 {float: left; width: 70%; padding-right: 30px; box-sizing: border-box;
     /*Fierfox,iOS4.x,Android2.3.x適用command*/-moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
     .box4-2 {float: right; width: 30%; text-align: center;}
+
+	/*box6*/
+.box6 {padding-top: 20px;}
+.box6:after {content:""; display:block; clear:both}
+.box6-1,.box6-2,.box6-3 {padding-bottom: 10px;}
+.box6-1 {float: left; width: 30%; }
+.box6-2 {float: left; width: 40%; }
+.box6-3 {float: left; width: 30%; }
+.subti {font-style: none;}
+.subti a {display: block; background-color: #222222; color: #888888; text-align: center; text-decoration: none;}
+.subti a:hover {opacity: 0.8;} 
+.subti h1,.subti p {margin: 0px; padding: 0px;}
+.subti h1 {font-size: 36px;}
+
 }
+
+
 
 /*----------1190px~----------*/
 @media (min-width: 1190px){
