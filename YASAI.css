@@ -13,32 +13,36 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 .site image {border: none;} /*Iinternet Explorerの枠線表示防止*/
 
 /*boxA box2*/
-.menu ul {margin:0; padding:0; transition: all 500ms 0s ease; /* list-style: none; */}
+.menu ul {margin:0; padding:0;}
 .menu li a {display:block; padding:10px 15px; 
 	        color:#000000; font-size:14px; text-emphasis: none;}
 .menu li a:hover {background-color: #949494; letter-spacing: 5px;}
 .menu ul:after {content:""; display:block; clear:both}
 .menu li {float: left; width:auto;}
 
-/*-------------------------menu-botton-----------------------------*/
-  /*---------------button4---------------*/
-  .button1{
-	width:20%;
-	margin:2%;
-	padding:10px 0px;
-	float: left;
-	text-align: center;
-	border: 2px solid #333;
-	color: rgb(0, 0, 0);
-	transition: all 100ms 0s ease;
-  }
-  .button1:hover {
-	border-style: dashed;
-  }
+/*---------------button1---------------*/
+.button1{margin:0; padding:0; text-align: center;
+	border: 2px solid #333; color: #000000;
+	transition: all 100ms 0s ease;}
+
+.button1:hover {border-style: dashed;}
   
 
 /*box3*/
 .topimage {max-width: 100%; height:auto; vertical-align: bottom;}
+
+
+.subti {font-style: none;}
+.subti a {display: block; background-color: #222222; color: #888888; text-align: center; text-decoration: none;}
+.subti a:hover {opacity: 0.8;}
+.subti h1,.subti p {margin: 0px; padding: 0px;}
+.subti h1 {font-size: 20px;}
+.subti p {font-size: 15px;}
+.subti i {display:block; padding-top: 40px; padding-bottom: 40px; font-size: 24px; }
+.subti .fa-book {background-color: #6b1a1a;}
+.subti .fa-cat {background-color: #1d3083;}
+.subti .fa-biohazard {background-color: #1d832b;}
+
 
 /*news*/
 .news {padding: 20px; border: solid 5px #dddddd}
@@ -62,33 +66,19 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 /*arrow1*/
 .arrow1 {
     padding: 5px; margin-top: 0px; margin-bottom: 20px; border-radius: 7px; 
-	position: relative;
-	background: #d5d5d5;
-	border: 2px solid #2b0101;
-}
+	position: relative;background: #d5d5d5;border: 2px solid #2b0101;}
+
 .arrow1:after, .arrow1:before {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
+	top: 100%;left: 50%;border: solid transparent;
+	content: " "; height: 0;width: 0; position: absolute; pointer-events: none;}
 
 .arrow1:after {
 	border-color: rgba(213, 213, 213, 0);
-	border-top-color: #d5d5d5;
-	border-width: 10px;
-	margin-left: -10px;
-}
+	border-top-color: #d5d5d5;border-width: 10px;margin-left: -10px;}
 
 .arrow1:before {
 	border-color: rgba(43, 1, 1, 0);
-	border-top-color: #000000;
-	border-width: 14px;
-	margin-left: -14px;
+	border-top-color: #000000; border-width: 14px; margin-left: -14px;
 }
 
 /*Copylight*/
@@ -124,18 +114,6 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 
 .box6-2 {float: left; width: 30%; margin-right: 5%;}
 .box6-3 {float: left; width: 30%; }
-.subti {font-style: none;}
-.subti a {display: block; background-color: #222222; color: #888888; text-align: center; text-decoration: none;}
-.subti a:hover {opacity: 0.8;}
- /*---font---*/ 
-.subti h1,.subti p {margin: 0px; padding: 0px;}
-.subti h1 {font-size: 20px;}
-.subti p {font-size: 15px;}
-
-.subti i {display:block; padding-top: 40px; padding-bottom: 40px; font-size: 24px; }
-.subti .fa-book {background-color: #6b1a1a;}
-.subti .fa-cat {background-color: #1d3083;}
-.subti .fa-biohazard {background-color: #1d832b;}
 
 }
 
