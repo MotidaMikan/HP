@@ -13,11 +13,29 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 .site image {border: none;} /*Iinternet Explorerの枠線表示防止*/
 
 /*boxA box2*/
-.menu ul {margin:0; padding:0; list-style: none}
-.menu li a {display:block; padding:10px 15px; color:#000000; font-size:14px; text-emphasis: none;}
-.menu li a:hover {background-color: #000000;}
+.menu ul {margin:0; padding:0; transition: all 500ms 0s ease; /* list-style: none; */}
+.menu li a {display:block; padding:10px 15px; 
+	        color:#000000; font-size:14px; text-emphasis: none;}
+.menu li a:hover {background-color: #949494; letter-spacing: 5px;}
 .menu ul:after {content:""; display:block; clear:both}
 .menu li {float: left; width:auto;}
+
+/*-------------------------menu-botton-----------------------------*/
+  /*---------------button4---------------*/
+  .button1{
+	width:20%;
+	margin:2%;
+	padding:10px 0px;
+	float: left;
+	text-align: center;
+	border: 2px solid #333;
+	color: rgb(0, 0, 0);
+	transition: all 100ms 0s ease;
+  }
+  .button1:hover {
+	border-style: dashed;
+  }
+  
 
 /*box3*/
 .topimage {max-width: 100%; height:auto; vertical-align: bottom;}
