@@ -7,20 +7,15 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 .boxA {padding-top: 20px; padding-bottom: 10px;}
 .box4 {padding-top: 20px; padding-bottom: 20px;}
 
-/*boxA box1 site*/
+
+/*boxA-box1*/
 .site h1 a {color:#000000; text-decoration: none;}
 .site h1 {margin:0; font-size:30px;}
 .site image {border: none;} /*Iinternet Explorerの枠線表示防止*/
 
-/*boxA box2*/
-.menu ul {margin:0; padding:0;}
-.menu li a {display:block; padding:10px 15px; 
-	        color:#000000; font-size:14px; text-emphasis: none;}
-.menu li a:hover {background-color: #949494; letter-spacing: 5px;}
-.menu ul:after {content:""; display:block; clear:both}
-.menu li {float: left; width:auto;}
 
-/*---------------button1---------------*/
+
+.box2{content:""; display:block; clear:both;}
 .button1{margin:0; padding:0; text-align: center;
 	border: 2px solid #333; color: #000000;
 	transition: all 100ms 0s ease;}
@@ -89,8 +84,6 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 
 /*----------~599px----------*/
 @media (max-width: 599px){
-    /*nav*/
-    .menu li a {padding:7px 10px; font-size: 11px;}
     .box4-1 {padding-bottom: 20px;}
 }
 
@@ -106,12 +99,11 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
     /*Fierfox,iOS4.x,Android2.3.x適用command*/-moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
     .box4-2 {float: right; width: 30%; text-align: center;}
 
-	/*box6*/
+/*---------box6---------*/
 .box6 {max-width: 1140px; padding-top: 20px; }
 .box6:after {content:""; display:block; clear:both}
 .box6-1,.box6-2,.box6-3 {padding-bottom: 10px;}
 .box6-1 {float: left; width: 30%; margin-right: 5%;}
-
 .box6-2 {float: left; width: 30%; margin-right: 5%;}
 .box6-3 {float: left; width: 30%; }
 
