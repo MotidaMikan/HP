@@ -4,28 +4,11 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 
 /*box layout*/
 .boxA,.box4,.box5,.box6 {padding-left: 15px; padding-right: 15px;}
-.boxA {padding-top: 20px; padding-bottom: 10px;}
+.boxA {padding-top: 0px; padding-bottom: 0px;}
 .box4 {padding-top: 20px; padding-bottom: 20px;}
-
-
-/*boxA-box1*/
-.site h1 a {color:#000000; text-decoration: none;}
-.site h1 {margin:0; font-size:30px;}
-.site image {border: none;} /*Iinternet Explorerの枠線表示防止*/
-
-
-
-.box2{content:""; display:block; clear:both;}
-.button1{margin:0; padding:0; text-align: center;
-	border: 2px solid #333; color: #000000;
-	transition: all 100ms 0s ease;}
-
-.button1:hover {border-style: dashed;}
-  
 
 /*box3*/
 .topimage {max-width: 100%; height:auto; vertical-align: bottom;}
-
 
 .subti {font-style: none;}
 .subti a {display: block; background-color: #222222; color: #888888; text-align: center; text-decoration: none;}
@@ -89,9 +72,19 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 
 /*----------768px~----------*/
 @media (min-width: 768px){
-    .boxA:after {content:""; display:block; clear:both}
-    .box1 {float:left; width:auto}
-    .box2 {float:right; width:auto}
+  /*----------boxAの設定----------*/  
+  .boxA:after {content:""; display:block; clear:both}
+  .box1 {margin-top:20px; float:left; width:auto}
+  .box2 {margin-top:20px; float:right; width:auto}
+  
+  .box1 h1 {margin-top:0;}
+ 
+
+  .box2 ul{list-style:none;}
+  .box2 li a{display:block;font-size:18px;color:#000000;text-decoration:none;}
+  .box2 li{float:left;width:auto;}
+  .box2{background-color:#b2f5e6;}
+
 
     /*box4 4-1,4-2*/
     .box4:after{content: ""; display: block; clear: both;}
@@ -107,14 +100,11 @@ body{margin: 0; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-se
 .box6-2 {float: left; width: 30%; margin-right: 5%;}
 .box6-3 {float: left; width: 30%; }
 
-}
-
-
 
 /*----------1190px~----------*/
 @media (min-width: 1190px){
-    .box3,.box4,.boxA-inner,.box5-inner {width: 1140px; margin-left: auto; margin-right: auto}
+    .boxA,.box3,.box4,.box6,.box5-inner {width: 1140px; margin-left: auto; margin-right: auto}
     .box4 {width: 1140px; margin-left: auto; margin-right: auto}
-    .boxA {margin-bottom: 20px; border-bottom: solid 1px #6b1a1a}
+    .boxA {border-bottom: solid 1px #6b1a1a}
 
 }   
