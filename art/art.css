@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body{margin: 0; background-color: #b4c0c5; font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;}
+
+/*box layout*/
+.boxA,.box4,.box5,.box6 {padding-left: 15px; padding-right: 15px;}
+.boxA {padding-top: 0px; padding-bottom: 0px;}
+.box4 {padding-top: 20px; padding-bottom: 20px;}
+
+/*Copylight*/
+.Copylight p {margin: 0; color: #000000; font-size: 14px;}
+
+/*box5*/
+.box5 {padding-top: 15px; padding-bottom: 15px; background-color: #dddddd;}
+
+/*----------~599px----------*/
+@media (max-width: 599px){
+    .box4-1 {padding-bottom: 20px;}
+}
+
+/*----------768px~----------*/
+@media (min-width: 768px){
+  /*----------boxAの設定----------*/  
+  .boxA:after {content:""; display:block; clear:both}
+  .box1 {margin-top:20px; margin-bottom: 10px; float:left; width:auto}
+  .box2 {margin-top:20px; margin-bottom: 10px; float:right; width:auto}
+  
+  .box1 h1 {margin-top:0; margin-bottom: 0px; }
+  .box2 ul {margin-top:0; margin-bottom: 0px; list-style:none;} info@itwizard.jp
+  
+  .box2 li a{
+
+    float: left;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    transition: all 500ms 0s ease;
+  }
+  .box2 li a:hover {
+    letter-spacing: 5px;
+  }
+  .box2 li { float:left;width:auto;} 
+  .box2 li:hover{background-color: #888888;}
+  .box2 li a {margin:5px 10px; font-size:22px; color:#000000;text-decoration:none; display:block;}
+ 
+/*----------1190px~----------*/
+@media (min-width: 1190px){
+    .boxA,.box3,.box4,.box6,.box5-inner {width: 1140px; margin-left: auto; margin-right: auto}
+    .box4 {width: 1140px; margin-left: auto; margin-right: auto}
+    .boxA {border-bottom: solid 1px #6b1a1a}
+
+}   
