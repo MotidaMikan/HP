@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS_Animetion</title>
+    <link rel="stylesheet" href="CSS_animation.css">
+  </head>
+ <body>
+
+ <div class="box0">
+   <div class="title">CSS_Animetionについて。</div>
+   <div class="menu">
+    <UL>
+      <li><a href="../index.html">Top</a></li>
+      <li><a href="../Hobby/hobby.html">Hobby</a></li>
+      <li><a href="../Study/study.html">Study</a></li>
+      <li><a href="./CSS_animation.html">CSS.Anime</a></li>
+      <li><a href="#">About</a></li>
+    </UL>
+  </div>
+ </div>
+
+
+
+  <div class="box1">
+   <h1>はじめに。</h1>
+   <P>最近のwebサイトはアニメーションが入っているものが多く、僕もその流行に便乗したく学び始めました。
+     まずは、マウスオーバーをトリガとしたAnimationをしてみました。文字の色や大きさ、背景色を変えてみました。
+     以下参考サイトです<br>
+      <UL>
+        <li><a href="https://qiita.com/soarflat/items/4a302e0cafa21477707f">CSSアニメーション入門</a></li>
+        <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/animations/css-vs-javascript?hl=ja">CSSとJavaScriptのアニメーション比較</a></li>
+        <li><a href="https://qiita.com/nekoneko-wanwan/items/e8114c6e34d2950a7b28">CSSアニメーションを使いこなすために知っておきたい5つのこと</a></li>
+        <li><a href="https://design.aekana.com/blog/css-mouseover-effect">コピペでできるCSSボタンマウスオーバーエフェクト集</a></li>
+      </UL> 
+      ↓使用例↓
+   </p>
+  </div>
+
+
+ 
+ <div class="box2">
+    <div class="text2">
+    <h2>使用例１～実は空欄ではない編～</h2>
+    <p>テキストの文字をあらかじめ白くして、マウスオーバーしたら背景色を変えます。</p>
+    <h2>Boxが重なっていたときの挙動</h2>
+    <p>Box1という[class]の中に全く同じ大きさのBox2を作成し二つのBoxが重なっている状況を作ります。Box1の上にBox2がある。
+      この時のマウスオーバーの設定を[.Box1:hover{~略~}]とすると、何も起こりません。
+      しかし、[.Box2:hover{~略~}]と書き換えるとマウスオーバー時にきちんと変化しました。
+      Boxが重なっているとき[:hover]の設定を下層のBoxに設定すると、マウスオーバーしても変化はない。
+      なので、Boxが重なっているときは。一番上層のBoxを指定してあげようと思いました。</p>
+   </div>
+ </div>
+
+ <div class="box3"><h3>動く編</h3>
+ 　<p>文字の大きさを変える同様、画像の大きさを変えて変えました。widthの設定を変更するだけ。
+   ついでに、文字の間隔(letter-spacing)も変更してみました。かわいい。</p>
+    <div class="A3"><p>にょぃーん。</p></div>
+    <div class="B3"><p>にょぃーん。</p></div>
+    <div class="C3"><p>にょぃーん。</p></div>
+ </div>
+ 
+  <div class="box4"><h3>CSSアコーディオン</h3>
+    <p>CSSだけで、アコーディオンを作ってみました。仕組みはinputタグをトリガーにして、適用するCSSを変更しています。タグとセレクタについてのリンク。↓</p>
+    <UL>
+  　 <li><a href="http://www.htmq.com/html5/label.shtml">★HTML5タグリファレンス</a></li>
+     <li><a href="https://saruwakakun.com/html-css/reference/selector">CSSセレクタについて。</a></li>
+     <li><a href="http://www.htmq.com/style/border-style.shtml">ボーダーのスタイルを指定する</a></li>
+    </UL>
+
+    <div class="Mon">
+     <h3>問題</h3>
+     <p>Q.相撲の土俵の下に埋められている食べ物はどれ？</p>
+     <input class="check" id="check1" type="checkbox">
+     <label class="label" for="check1">1.そもそも、何も埋まってない。</label>
+     <div class="acd-text">
+        <p>A.埋まっていなかったら問題にしません。小学校からやり直してきてください。</p>
+     </div>
+     <input class="check" id="check2" type="checkbox">
+     <label class="label" for="check2">2.亀さん</label>
+     <div class="acd-text">
+        <p>A.ちがうよ</p>
+     </div>
+     <input class="check" id="check3" type="checkbox">
+     <label class="label" for="check3">3.スルメ</label>
+     <div class="acd-text">
+      <h3>正解！！</h3><br><p>A.天才！！ひゅーひゅー。他にも昆布や米などが神さまへの供え物として埋められているよ、ッキャッキャ。</p>
+     </div>
+    </div>
+  </div>
+  
+  <div class="box5"><h3>ボタン</h3><p>ボタンをいっぱい作ってみたよ。</p>
+    <div class="button1">button</div>
+    <div class="button2">button</div>
+    <div class="button3">button</div>
+    <div class="button4">button</div>
+    <div class="button5">button</div>
+    
+  </div> 
+ </body>
+</html>

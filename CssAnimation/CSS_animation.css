@@ -1,0 +1,294 @@
+body{
+  font-family: "Avenir Next";
+  background-color: #cccccc;}
+
+/*---------------------.box0--------------------*/
+.box0{
+  background-color: #999999;
+  height:auto;
+}
+/*--------------Title--------------*/
+.title{
+  margin:10px,0;
+  border:0;
+  padding:0;
+  font-size:50px;
+  text-align: center;
+}
+/*--------------menu--------------*/
+.menu ul{margin:0;
+  padding:0;
+  list-style:none;}
+.menu:after{content:"";
+  display:block;
+  clear:both;}
+.menu li a{display:block;
+  padding:5px 20px;font-size:20px;
+  text-decoration:none;color:#ffffff;text-align:center;}
+.menu li{float:left;width:auto;}
+.menu{background-color:#333333;}
+/*---------------------.box1--------------------*/
+
+.box1{
+height:auto;
+margin:0;
+padding-top:30px;/*上の謎スペース消し*/
+padding-bottom:30px;/*下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#999999;
+font-size:15px;
+color:#ffffff;
+transition: all 500ms 0s ease;}
+
+.box1 a{
+  color:#ffffff;  
+  transition: all 200ms 0s ease;}
+
+.box1 a:hover{
+  color:#333333;
+  font-size:20px;}
+
+/*---------------------.box2--------------------*/
+.text2{
+height:auto;margin:0;
+padding-top:30px;padding-bottom:30px;/*上下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#cccccc;
+transition: all 500ms 0s ease;}
+.text2:hover{background-color:#333333;}
+
+.text2 h2{
+  font-size:20px;
+  color:#cccccc;}
+.text2 p{
+  font-size:15px;
+  color:#cccccc;}
+/*---------------------.box3--------------------*/
+.box3{
+height:auto;
+margin:0;
+padding-top:30px;/*上の謎スペース消し*/
+padding-bottom:10px;/*下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#999999;}
+.box3 h3{
+  font-size:20px;
+  color:#ffffff;}
+.box3 p{
+  font-size:15px;
+  color:#ffffff;}
+/*--------------A3--------------*/
+.A3{
+  background-color:#d14444;
+  height:50px;
+  width:100px;
+  transition: all 500ms 0s ease;
+}
+.A3:hover{
+  background-color:#d14444;
+  width:200px;
+  letter-spacing: 10px;/*文字の間隔調整*/
+}
+.A3 p{
+  text-align: center;
+  padding-top:20px;
+  font-size:10px;
+  color:#ffffff;
+}
+/*--------------B3--------------*/
+.B3{
+  background-color:#d14444;
+  height:50px;
+  width:100px;
+  transition: all 800ms 0s ease;
+}
+.B3:hover{
+  background-color:#5b2ace;
+  width:200px;
+  letter-spacing: 10px;/*文字の間隔調整*/
+}
+.B3 p{
+  text-align: center;
+  padding-top:20px;
+  font-size:10px;
+  color:#ffffff;
+}
+/*--------------C3--------------*/
+.C3{
+  background-color:#d14444;
+  height:50px;
+  width:100px;
+  transition: all 1200ms 0s ease;
+}
+.C3:hover{
+  background-color:#d14444;
+  width:200px;
+  padding-left:100Px;
+  letter-spacing: 10px;/*文字の間隔調整*/
+}
+.C3 p{
+  text-align: center;
+  padding-top:20px;
+  font-size:10px;
+  color:#ffffff;
+}
+/*---------------------.box4--------------------*/
+.box4{
+  height:auto;
+  padding-top:30px;/*上の謎スペース消し*/
+  padding-bottom:10px;/*下の謎スペース消し*/
+  padding-left: 5%;padding-right: 5%;
+  background-color: #333333;
+  color:#ffffff;
+}
+
+.box4 a{
+  color:#ffffff;  
+  transition: all 200ms 0s ease;}
+
+.box4 a:hover{
+  font-size:20px;}
+
+.Mon{border:dotted #ffffff;
+  text-align: center;
+}  
+
+.check{display: none;/*チェックbox隠してます。*/
+}
+
+.label{
+  padding: 10px;
+  margin-left:25%;
+  max-width:400px;
+  background-color:#888888;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+.label:hover{
+  background-color: #d14444
+}
+
+.acd-text{
+    height:0;
+    max-width:400px;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+    visibility: hidden;
+}
+.check:checked + .label + .acd-text{
+  height:auto;
+  max-width:400px;
+  margin-left:25%;
+  opacity: 1;
+  text-align: center;
+  visibility: visible;
+}
+/*---------------------.box5--------------------*/
+.box5{background-color:#cccccc;
+  text-align: center;
+}
+.box5:after{content: "";
+display: block;
+clear: both
+}
+
+/*---------------button1---------------*/
+.button1{
+  width:20%;
+  margin:2%;
+  padding:10px 0px;
+  float: left;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  transition: all 500ms 0s ease;
+}
+.button1:hover {
+  background-color: #59b1eb;
+}
+
+/*---------------button2---------------*/
+.button2 {
+  width:20%;
+  margin:2%;
+  padding:10px 0px;
+  float: left;
+  text-align: center;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  transition: all 500ms 0s ease;
+}
+.button2:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+
+/*---------------button3---------------*/
+.button3{
+  width:20%;
+  margin:2%;
+  padding:10px 0px;
+  float: left;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  transition: all 500ms 0s ease;
+}
+.button3:hover {
+  letter-spacing: 5px;
+}
+/*---------------button4---------------*/
+.button4{
+  width:20%;
+  margin:2%;
+  padding:10px 0px;
+  float: left;
+  text-align: center;
+  border: 2px solid #333;
+  color: rgb(0, 0, 0);
+  transition: all 100ms 0s ease;
+}
+.button4:hover {
+  border-style: dashed;
+}
+
+/*---------------button5------------
+.button5 {
+  width:20%;
+  margin:2%;
+  padding:10px 0px;
+  position: relative;
+  z-index: 2;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+}
+.button5:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.button5::before,
+.button5::after {
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+}
+.button5::before {
+  right: 0;
+}
+.button5::after {
+  left: 0;
+}
+.button5:hover::before,
+.button5:hover::after {
+  width: 0;
+  background-color: #59b1eb;
+}
