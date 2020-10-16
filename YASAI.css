@@ -76,19 +76,8 @@ body{margin: 0; background-color: #b4c0c5; font-family: "メイリオ", "Hiragin
   .box2 {margin-top:20px; margin-bottom: 10px; float:right; width:auto}
   
   .box1 h1 {margin-top:0; margin-bottom: 0px; }
-  .box2 ul {margin-top:0; margin-bottom: 0px; list-style:none;} info@itwizard.jp
+  .box2 ul {margin-top:0; margin-bottom: 0px; list-style:none;} 
 
-  .box2 li a{
-
-    float: left;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    transition: all 500ms 0s ease;
-  }
-  .box2 li a:hover {
-    letter-spacing: 5px;
-  }
   .box2 li { float:left;width:auto;} 
   .box2 li:hover{background-color: #888888;}
   .box2 li a {margin:5px 10px; font-size:22px; color:#000000;text-decoration:none; display:block;}
